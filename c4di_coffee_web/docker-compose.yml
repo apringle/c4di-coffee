@@ -5,9 +5,9 @@ web:
   ports:
     - '4000:4000'
   links:
-    - mongodb
+    - postgres
   volumes:
     - '.:/code'
   working_dir: '/code'
-mongodb:
-  image: mongo
+postgres:
+  image: postgres
