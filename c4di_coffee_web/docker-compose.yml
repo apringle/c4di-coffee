@@ -1,0 +1,13 @@
+web:
+  image: marcelocg/phoenix
+  command: mix phoenix.server
+  environment:
+  ports:
+    - '4000:4000'
+  links:
+    - mongodb
+  volumes:
+    - '.:/code'
+  working_dir: '/phoenix'
+mongodb:
+  image: mongo
