@@ -1,0 +1,4 @@
+# Ignore IntelliJ for the time being
+
+*.iml
+.idea/
