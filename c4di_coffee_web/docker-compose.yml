@@ -8,6 +8,6 @@ web:
     - mongodb
   volumes:
     - '.:/code'
-  working_dir: '/phoenix'
+  working_dir: '/code'
 mongodb:
   image: mongo
