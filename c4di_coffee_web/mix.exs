@@ -19,7 +19,7 @@ defmodule C4diCoffeeWeb.Mixfile do
   def application do
     [mod: {C4diCoffeeWeb, []},
      applications: [:phoenix, :phoenix_html, :cowboy, :logger, :gettext,
-                    :phoenix_ecto, :postgrex]]
+                    :mongodb_ecto, :ecto]]
   end
 
   # Specifies which paths to compile per environment.
@@ -32,11 +32,11 @@ defmodule C4diCoffeeWeb.Mixfile do
   defp deps do
     [{:phoenix, "~> 1.1.2"},
      {:phoenix_ecto, "~> 2.0"},
-     {:postgrex, ">= 0.0.0"},
      {:phoenix_html, "~> 2.3"},
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:gettext, "~> 0.9"},
-     {:cowboy, "~> 1.0"}]
+     {:cowboy, "~> 1.0"},
+     {:mongodb_ecto, github: "michalmuskala/mongodb_ecto"}]
   end
 
   # Aliases are shortcut or tasks specific to the current project.

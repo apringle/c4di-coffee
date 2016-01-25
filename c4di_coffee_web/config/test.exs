@@ -11,9 +11,5 @@ config :logger, level: :warn
 
 # Configure your database
 config :c4di_coffee_web, C4diCoffeeWeb.Repo,
-  adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
   database: "c4di_coffee_web_test",
-  hostname: "localhost",
-  pool: Ecto.Adapters.SQL.Sandbox
+  hostname: "localhost"
