@@ -1,7 +1,6 @@
 web:
   image: apringle/phoenix-docker
   command: mix phoenix.server
-  environment:
   ports:
     - '4000:4000'
   links:
