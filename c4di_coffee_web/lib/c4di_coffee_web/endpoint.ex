@@ -33,7 +33,7 @@ defmodule C4diCoffeeWeb.Endpoint do
   plug Plug.Session,
     store: :cookie,
     key: "_c4di_coffee_web_key",
-    signing_salt: "EjQtEDa8"
+    signing_salt: "jrDii+zQ"
 
   plug C4diCoffeeWeb.Router
 end

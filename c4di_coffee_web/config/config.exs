@@ -9,7 +9,7 @@ use Mix.Config
 config :c4di_coffee_web, C4diCoffeeWeb.Endpoint,
   url: [host: "localhost"],
   root: Path.dirname(__DIR__),
-  secret_key_base: "8j24jVnL1+1XeO/hjss44k2z7ks3r8CVMxnvM/Kd3sIlXGoYW7Icw2UB8p3u5CG4",
+  secret_key_base: "tiB8uckpELy25MReYu7wjYDmFt77kChhDOnQHR8RpJPfhBg1QYhPaLOLyRwLCRlh",
   render_errors: [accepts: ~w(html json)],
   pubsub: [name: C4diCoffeeWeb.PubSub,
            adapter: Phoenix.PubSub.PG2]
