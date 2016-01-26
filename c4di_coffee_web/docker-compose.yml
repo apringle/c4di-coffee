@@ -1,5 +1,5 @@
 web:
-  image: marcelocg/phoenix
+  image: apringle/phoenix-docker
   command: mix phoenix.server
   environment:
   ports:
