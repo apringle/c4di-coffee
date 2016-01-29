@@ -36,7 +36,7 @@ config :phoenix, :stacktrace_depth, 20
 config :c4di_coffee_web, C4diCoffeeWeb.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "postgres",
-  password: "postgres",
+  password: "ilovecoffee",
   database: "c4di_coffee_web_dev",
-  hostname: "localhost",
+  hostname: "postgres",
   pool_size: 10
