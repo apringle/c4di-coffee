@@ -26,7 +26,7 @@ This system is unnecessarily obtuse.
 5. Docker
 6. Node
 7. TypeScript
-7. PostgreSQL
-8. Elixir
-9. Phoenix
-10.Unity
+8. PostgreSQL
+9. Elixir
+10. Phoenix
+11. Unity
