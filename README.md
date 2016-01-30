@@ -30,3 +30,5 @@ This system is unnecessarily obtuse.
 9. Elixir
 10. Phoenix
 11. Unity
+12. Gulp
+13. javascript
