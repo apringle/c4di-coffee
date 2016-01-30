@@ -12,12 +12,13 @@
     "gulp-nodemon": "^2.0.6",
     "gulp-tslint": "^4.3.1",
     "gulp-typescript": "^2.10.0",
+    "mqtt": "^1.7.0",
+    "pg": "^4.4.4",
     "tslint": "^3.3.0",
-    "typescript": "^1.7.5",
-    "mqtt": "^1.7.0"
-},
+    "typescript": "^1.7.5"
+  },
   "devDependencies": {
     "del": "^2.2.0",
-    "gulp-debug": "^2.1.2",
+    "gulp-debug": "^2.1.2"
   }
 }
