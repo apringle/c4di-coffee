@@ -14,7 +14,3 @@ postgres:
     POSTGRES_PASSWORD: 'ilovecoffee'
 mqtt-client:
   build: ./mqtt-client
-  command: sh start.sh
-  volumes: 
-    - './mqtt-client:/code'
-  working_dir: '/code'
