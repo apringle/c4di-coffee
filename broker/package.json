@@ -3,6 +3,15 @@
   "version": "1.0.0",
   "description": "Broker for reading MQTT and inserting data into database",
   "repository": "https://github.com/apringle/c4di-coffee",
-  "lisence": "Who knows."
-
+  "license": "Who knows.",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-typescript": "^2.10.0",
+    "typescript": "^1.7.5"
+  },
+  "devDependencies": {
+    "del": "^2.2.0",
+    "gulp-debug": "^2.1.2",
+    "gulp-tslint": "^4.3.1"
+  }
 }

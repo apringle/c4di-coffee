@@ -1,0 +1,11 @@
+#ignore compiled javascript from typscript
+/src/js/*.js
+/src/js/*.js.map
+
+
+# Dependency directory
+node_modules
+
+logs
+*.log
+npm-debug.log*
