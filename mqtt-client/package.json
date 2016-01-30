@@ -19,6 +19,5 @@
   "devDependencies": {
     "del": "^2.2.0",
     "gulp-debug": "^2.1.2",
-    "gulp-tslint": "^4.3.1"
   }
 }

@@ -1,6 +1,6 @@
-var READINGS_TOPIC = 'coffee/readings';
+var READINGS_TOPIC: string = 'coffee/readings';
 
-var mqtt = require('mqtt');
+import mqtt = require("mqtt");
 var client  = mqtt.connect('mqtt://mqtt-broker');
 
 client.on('error', function(error) {
