@@ -12,9 +12,9 @@ postgres:
   image: postgres
   environment:
     POSTGRES_PASSWORD: 'ilovecoffee'
-broker:
-  build: ./broker
+mqtt-client:
+  build: ./mqtt-client
   command: sh start.sh
   volumes: 
-    - './broker:/code'
+    - './mqtt-client:/code'
   working_dir: '/code'
