@@ -4,6 +4,7 @@ var gulp = require('gulp'),
     debug = require('gulp-debug'),
     tsc = require('gulp-typescript'),
     tslint = require('gulp-tslint'),
+    nodemon = require('gulp-nodemon'),
     sourcemaps = require('gulp-sourcemaps'),
     del = require('del'),
     Config = require('./gulpfile.config'),
@@ -68,6 +69,16 @@ gulp.task('clean-ts', function (cb) {
 
 gulp.task('watch', function() {
     gulp.watch([config.allTypeScript], ['ts-lint', 'compile-ts']);
+});
+
+gulp.task('run', ['compile-ts', 'watch'], function(){
+  nodemon ({
+    script: './src/js/Server.js',
+    ext: 'js',
+    env: {
+      'NODE_ENV': 'development'
+    }
+  });
 });
 
 gulp.task('default', ['ts-lint', 'compile-ts']);
