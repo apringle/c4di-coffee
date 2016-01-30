@@ -14,3 +14,10 @@ postgres:
     POSTGRES_PASSWORD: 'ilovecoffee'
 mqtt-client:
   build: ./mqtt-client
+  links:
+   - mqtt-broker
+mqtt-broker:
+  image: toke/mosquitto
+  ports:
+   - '1883:1883'
+   - '9001:9001'
