@@ -12,5 +12,5 @@ postgres:
   image: postgres
   environment:
     POSTGRES_PASSWORD: 'ilovecoffee'
-broker:
-  build: ./broker
+mqtt-client:
+  build: ./mqtt-client
