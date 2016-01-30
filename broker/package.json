@@ -1,0 +1,8 @@
+{
+  "name": "broker",
+  "version": "1.0.0",
+  "description": "Broker for reading MQTT and inserting data into database",
+  "repository": "https://github.com/apringle/c4di-coffee",
+  "lisence": "Who knows."
+
+}
