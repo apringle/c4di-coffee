@@ -1,15 +1,24 @@
 {
   "name": "c4di-coffee-mqtt-client",
   "version": "1.0.0",
-  "description": "A MQTT client to handle coffee related information",
-  "main": "app.js",
-  "scripts": {
-    "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
+  "description": "A MQTT client to handle inserting coffee related information into a database",
+  "repository": "https://github.com/apringle/c4di-coffee",
   "license": "SEE LICENSE IN ../license.md",
+  "scripts": {
+    "start": "gulp run"
+  },
   "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-nodemon": "^2.0.6",
+    "gulp-tslint": "^4.3.1",
+    "gulp-typescript": "^2.10.0",
+    "tslint": "^3.3.0",
+    "typescript": "^1.7.5",
     "mqtt": "^1.7.0"
+},
+  "devDependencies": {
+    "del": "^2.2.0",
+    "gulp-debug": "^2.1.2",
+    "gulp-tslint": "^4.3.1"
   }
 }
