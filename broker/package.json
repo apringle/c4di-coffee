@@ -4,6 +4,7 @@
   "description": "A message broker and handler for coffee related information",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
