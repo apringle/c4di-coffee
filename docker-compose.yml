@@ -12,3 +12,9 @@ postgres:
   image: postgres
   environment:
     POSTGRES_PASSWORD: 'ilovecoffee'
+broker:
+  build: ./broker
+  command: sh start.sh
+  volumes: 
+    - './broker:/code'
+  working_dir: '/code'

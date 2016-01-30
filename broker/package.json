@@ -6,7 +6,9 @@
   "license": "Who knows.",
   "dependencies": {
     "gulp": "^3.9.0",
+    "gulp-tslint": "^4.3.1",
     "gulp-typescript": "^2.10.0",
+    "tslint": "^3.3.0",
     "typescript": "^1.7.5"
   },
   "devDependencies": {
