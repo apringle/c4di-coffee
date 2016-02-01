@@ -1,0 +1,16 @@
+<h1>All Readings</h1>
+<table>
+<tr>
+	<th>Pot Name</th>
+	<th>Time</th>
+	<th>Weight</th>
+</tr>
+<%= for reading <- @readings do %>
+	<tr>
+			<td><%= reading.pot_name %></td>
+			<td><%= reading.time %></td>
+			<td><%= reading.reading_kg %></td>
+	</tr>
+<% end %>
+
+</table>

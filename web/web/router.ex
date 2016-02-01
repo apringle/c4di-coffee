@@ -17,6 +17,7 @@ defmodule C4diCoffeeWeb.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+    get "/data", PageController, :data
   end
 
   # Other scopes may use custom stacks.
