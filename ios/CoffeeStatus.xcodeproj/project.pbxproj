@@ -1,0 +1,783 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FAA3E4CA1C5F93CF00BC5936 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA3E4C91C5F93CF00BC5936 /* AppDelegate.swift */; };
+		FAA3E4CC1C5F93CF00BC5936 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA3E4CB1C5F93CF00BC5936 /* ViewController.swift */; };
+		FAA3E4CF1C5F93CF00BC5936 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA3E4CD1C5F93CF00BC5936 /* Main.storyboard */; };
+		FAA3E4D11C5F93CF00BC5936 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA3E4D01C5F93CF00BC5936 /* Assets.xcassets */; };
+		FAA3E4D41C5F93CF00BC5936 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA3E4D21C5F93CF00BC5936 /* LaunchScreen.storyboard */; };
+		FAA3E4DF1C5F93CF00BC5936 /* CoffeeStatusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA3E4DE1C5F93CF00BC5936 /* CoffeeStatusTests.swift */; };
+		FAA3E4EA1C5F93CF00BC5936 /* CoffeeStatusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA3E4E91C5F93CF00BC5936 /* CoffeeStatusUITests.swift */; };
+		FAA3E4EF1C5F93CF00BC5936 /* CoffeeStatus WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FAA3E4EE1C5F93CF00BC5936 /* CoffeeStatus WatchKit App.app */; };
+		FAA3E4F51C5F93CF00BC5936 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA3E4F31C5F93CF00BC5936 /* Interface.storyboard */; };
+		FAA3E4F71C5F93CF00BC5936 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA3E4F61C5F93CF00BC5936 /* Assets.xcassets */; };
+		FAA3E4FE1C5F93CF00BC5936 /* CoffeeStatus WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FAA3E4FD1C5F93CF00BC5936 /* CoffeeStatus WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FAA3E5051C5F93CF00BC5936 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA3E5041C5F93CF00BC5936 /* InterfaceController.swift */; };
+		FAA3E5071C5F93CF00BC5936 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA3E5061C5F93CF00BC5936 /* ExtensionDelegate.swift */; };
+		FAA3E5091C5F93CF00BC5936 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA3E5081C5F93CF00BC5936 /* NotificationController.swift */; };
+		FAA3E50B1C5F93CF00BC5936 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA3E50A1C5F93CF00BC5936 /* ComplicationController.swift */; };
+		FAA3E50D1C5F93CF00BC5936 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA3E50C1C5F93CF00BC5936 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAA3E4DB1C5F93CF00BC5936 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAA3E4BE1C5F93CF00BC5936 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAA3E4C51C5F93CF00BC5936;
+			remoteInfo = CoffeeStatus;
+		};
+		FAA3E4E61C5F93CF00BC5936 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAA3E4BE1C5F93CF00BC5936 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAA3E4C51C5F93CF00BC5936;
+			remoteInfo = CoffeeStatus;
+		};
+		FAA3E4F01C5F93CF00BC5936 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAA3E4BE1C5F93CF00BC5936 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAA3E4ED1C5F93CF00BC5936;
+			remoteInfo = "CoffeeStatus WatchKit App";
+		};
+		FAA3E4FF1C5F93CF00BC5936 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAA3E4BE1C5F93CF00BC5936 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAA3E4FC1C5F93CF00BC5936;
+			remoteInfo = "CoffeeStatus WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FAA3E5141C5F93CF00BC5936 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FAA3E4FE1C5F93CF00BC5936 /* CoffeeStatus WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA3E5181C5F93CF00BC5936 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				FAA3E4EF1C5F93CF00BC5936 /* CoffeeStatus WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FAA3E4C61C5F93CF00BC5936 /* CoffeeStatus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeStatus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAA3E4C91C5F93CF00BC5936 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAA3E4CB1C5F93CF00BC5936 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FAA3E4CE1C5F93CF00BC5936 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAA3E4D01C5F93CF00BC5936 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAA3E4D31C5F93CF00BC5936 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAA3E4D51C5F93CF00BC5936 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAA3E4DA1C5F93CF00BC5936 /* CoffeeStatusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoffeeStatusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAA3E4DE1C5F93CF00BC5936 /* CoffeeStatusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeStatusTests.swift; sourceTree = "<group>"; };
+		FAA3E4E01C5F93CF00BC5936 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAA3E4E51C5F93CF00BC5936 /* CoffeeStatusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoffeeStatusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAA3E4E91C5F93CF00BC5936 /* CoffeeStatusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeStatusUITests.swift; sourceTree = "<group>"; };
+		FAA3E4EB1C5F93CF00BC5936 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAA3E4EE1C5F93CF00BC5936 /* CoffeeStatus WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoffeeStatus WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAA3E4F41C5F93CF00BC5936 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		FAA3E4F61C5F93CF00BC5936 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAA3E4F81C5F93CF00BC5936 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAA3E4FD1C5F93CF00BC5936 /* CoffeeStatus WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CoffeeStatus WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAA3E5031C5F93CF00BC5936 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		FAA3E5041C5F93CF00BC5936 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		FAA3E5061C5F93CF00BC5936 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		FAA3E5081C5F93CF00BC5936 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		FAA3E50A1C5F93CF00BC5936 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		FAA3E50C1C5F93CF00BC5936 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAA3E50E1C5F93CF00BC5936 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAA3E4C31C5F93CF00BC5936 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA3E4D71C5F93CF00BC5936 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA3E4E21C5F93CF00BC5936 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA3E4FA1C5F93CF00BC5936 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAA3E4BD1C5F93CF00BC5936 = {
+			isa = PBXGroup;
+			children = (
+				FAA3E4C81C5F93CF00BC5936 /* CoffeeStatus */,
+				FAA3E4DD1C5F93CF00BC5936 /* CoffeeStatusTests */,
+				FAA3E4E81C5F93CF00BC5936 /* CoffeeStatusUITests */,
+				FAA3E4F21C5F93CF00BC5936 /* CoffeeStatus WatchKit App */,
+				FAA3E5011C5F93CF00BC5936 /* CoffeeStatus WatchKit Extension */,
+				FAA3E4C71C5F93CF00BC5936 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAA3E4C71C5F93CF00BC5936 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAA3E4C61C5F93CF00BC5936 /* CoffeeStatus.app */,
+				FAA3E4DA1C5F93CF00BC5936 /* CoffeeStatusTests.xctest */,
+				FAA3E4E51C5F93CF00BC5936 /* CoffeeStatusUITests.xctest */,
+				FAA3E4EE1C5F93CF00BC5936 /* CoffeeStatus WatchKit App.app */,
+				FAA3E4FD1C5F93CF00BC5936 /* CoffeeStatus WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAA3E4C81C5F93CF00BC5936 /* CoffeeStatus */ = {
+			isa = PBXGroup;
+			children = (
+				FAA3E4C91C5F93CF00BC5936 /* AppDelegate.swift */,
+				FAA3E4CB1C5F93CF00BC5936 /* ViewController.swift */,
+				FAA3E4CD1C5F93CF00BC5936 /* Main.storyboard */,
+				FAA3E4D01C5F93CF00BC5936 /* Assets.xcassets */,
+				FAA3E4D21C5F93CF00BC5936 /* LaunchScreen.storyboard */,
+				FAA3E4D51C5F93CF00BC5936 /* Info.plist */,
+			);
+			path = CoffeeStatus;
+			sourceTree = "<group>";
+		};
+		FAA3E4DD1C5F93CF00BC5936 /* CoffeeStatusTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAA3E4DE1C5F93CF00BC5936 /* CoffeeStatusTests.swift */,
+				FAA3E4E01C5F93CF00BC5936 /* Info.plist */,
+			);
+			path = CoffeeStatusTests;
+			sourceTree = "<group>";
+		};
+		FAA3E4E81C5F93CF00BC5936 /* CoffeeStatusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FAA3E4E91C5F93CF00BC5936 /* CoffeeStatusUITests.swift */,
+				FAA3E4EB1C5F93CF00BC5936 /* Info.plist */,
+			);
+			path = CoffeeStatusUITests;
+			sourceTree = "<group>";
+		};
+		FAA3E4F21C5F93CF00BC5936 /* CoffeeStatus WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				FAA3E4F31C5F93CF00BC5936 /* Interface.storyboard */,
+				FAA3E4F61C5F93CF00BC5936 /* Assets.xcassets */,
+				FAA3E4F81C5F93CF00BC5936 /* Info.plist */,
+			);
+			path = "CoffeeStatus WatchKit App";
+			sourceTree = "<group>";
+		};
+		FAA3E5011C5F93CF00BC5936 /* CoffeeStatus WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FAA3E5041C5F93CF00BC5936 /* InterfaceController.swift */,
+				FAA3E5061C5F93CF00BC5936 /* ExtensionDelegate.swift */,
+				FAA3E5081C5F93CF00BC5936 /* NotificationController.swift */,
+				FAA3E50A1C5F93CF00BC5936 /* ComplicationController.swift */,
+				FAA3E50C1C5F93CF00BC5936 /* Assets.xcassets */,
+				FAA3E50E1C5F93CF00BC5936 /* Info.plist */,
+				FAA3E5021C5F93CF00BC5936 /* Supporting Files */,
+			);
+			path = "CoffeeStatus WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		FAA3E5021C5F93CF00BC5936 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FAA3E5031C5F93CF00BC5936 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAA3E4C51C5F93CF00BC5936 /* CoffeeStatus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAA3E5191C5F93CF00BC5936 /* Build configuration list for PBXNativeTarget "CoffeeStatus" */;
+			buildPhases = (
+				FAA3E4C21C5F93CF00BC5936 /* Sources */,
+				FAA3E4C31C5F93CF00BC5936 /* Frameworks */,
+				FAA3E4C41C5F93CF00BC5936 /* Resources */,
+				FAA3E5181C5F93CF00BC5936 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAA3E4F11C5F93CF00BC5936 /* PBXTargetDependency */,
+			);
+			name = CoffeeStatus;
+			productName = CoffeeStatus;
+			productReference = FAA3E4C61C5F93CF00BC5936 /* CoffeeStatus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAA3E4D91C5F93CF00BC5936 /* CoffeeStatusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAA3E51C1C5F93CF00BC5936 /* Build configuration list for PBXNativeTarget "CoffeeStatusTests" */;
+			buildPhases = (
+				FAA3E4D61C5F93CF00BC5936 /* Sources */,
+				FAA3E4D71C5F93CF00BC5936 /* Frameworks */,
+				FAA3E4D81C5F93CF00BC5936 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAA3E4DC1C5F93CF00BC5936 /* PBXTargetDependency */,
+			);
+			name = CoffeeStatusTests;
+			productName = CoffeeStatusTests;
+			productReference = FAA3E4DA1C5F93CF00BC5936 /* CoffeeStatusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FAA3E4E41C5F93CF00BC5936 /* CoffeeStatusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAA3E51F1C5F93CF00BC5936 /* Build configuration list for PBXNativeTarget "CoffeeStatusUITests" */;
+			buildPhases = (
+				FAA3E4E11C5F93CF00BC5936 /* Sources */,
+				FAA3E4E21C5F93CF00BC5936 /* Frameworks */,
+				FAA3E4E31C5F93CF00BC5936 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAA3E4E71C5F93CF00BC5936 /* PBXTargetDependency */,
+			);
+			name = CoffeeStatusUITests;
+			productName = CoffeeStatusUITests;
+			productReference = FAA3E4E51C5F93CF00BC5936 /* CoffeeStatusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		FAA3E4ED1C5F93CF00BC5936 /* CoffeeStatus WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAA3E5151C5F93CF00BC5936 /* Build configuration list for PBXNativeTarget "CoffeeStatus WatchKit App" */;
+			buildPhases = (
+				FAA3E4EC1C5F93CF00BC5936 /* Resources */,
+				FAA3E5141C5F93CF00BC5936 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAA3E5001C5F93CF00BC5936 /* PBXTargetDependency */,
+			);
+			name = "CoffeeStatus WatchKit App";
+			productName = "CoffeeStatus WatchKit App";
+			productReference = FAA3E4EE1C5F93CF00BC5936 /* CoffeeStatus WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		FAA3E4FC1C5F93CF00BC5936 /* CoffeeStatus WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAA3E5111C5F93CF00BC5936 /* Build configuration list for PBXNativeTarget "CoffeeStatus WatchKit Extension" */;
+			buildPhases = (
+				FAA3E4F91C5F93CF00BC5936 /* Sources */,
+				FAA3E4FA1C5F93CF00BC5936 /* Frameworks */,
+				FAA3E4FB1C5F93CF00BC5936 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CoffeeStatus WatchKit Extension";
+			productName = "CoffeeStatus WatchKit Extension";
+			productReference = FAA3E4FD1C5F93CF00BC5936 /* CoffeeStatus WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAA3E4BE1C5F93CF00BC5936 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Alex Pringle";
+				TargetAttributes = {
+					FAA3E4C51C5F93CF00BC5936 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = TV68TCP6MB;
+					};
+					FAA3E4D91C5F93CF00BC5936 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = TV68TCP6MB;
+						TestTargetID = FAA3E4C51C5F93CF00BC5936;
+					};
+					FAA3E4E41C5F93CF00BC5936 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = TV68TCP6MB;
+						TestTargetID = FAA3E4C51C5F93CF00BC5936;
+					};
+					FAA3E4ED1C5F93CF00BC5936 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = TV68TCP6MB;
+					};
+					FAA3E4FC1C5F93CF00BC5936 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = TV68TCP6MB;
+					};
+				};
+			};
+			buildConfigurationList = FAA3E4C11C5F93CF00BC5936 /* Build configuration list for PBXProject "CoffeeStatus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAA3E4BD1C5F93CF00BC5936;
+			productRefGroup = FAA3E4C71C5F93CF00BC5936 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAA3E4C51C5F93CF00BC5936 /* CoffeeStatus */,
+				FAA3E4D91C5F93CF00BC5936 /* CoffeeStatusTests */,
+				FAA3E4E41C5F93CF00BC5936 /* CoffeeStatusUITests */,
+				FAA3E4ED1C5F93CF00BC5936 /* CoffeeStatus WatchKit App */,
+				FAA3E4FC1C5F93CF00BC5936 /* CoffeeStatus WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAA3E4C41C5F93CF00BC5936 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAA3E4D41C5F93CF00BC5936 /* LaunchScreen.storyboard in Resources */,
+				FAA3E4D11C5F93CF00BC5936 /* Assets.xcassets in Resources */,
+				FAA3E4CF1C5F93CF00BC5936 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA3E4D81C5F93CF00BC5936 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA3E4E31C5F93CF00BC5936 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA3E4EC1C5F93CF00BC5936 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAA3E4F71C5F93CF00BC5936 /* Assets.xcassets in Resources */,
+				FAA3E4F51C5F93CF00BC5936 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA3E4FB1C5F93CF00BC5936 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAA3E50D1C5F93CF00BC5936 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAA3E4C21C5F93CF00BC5936 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAA3E4CC1C5F93CF00BC5936 /* ViewController.swift in Sources */,
+				FAA3E4CA1C5F93CF00BC5936 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA3E4D61C5F93CF00BC5936 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAA3E4DF1C5F93CF00BC5936 /* CoffeeStatusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA3E4E11C5F93CF00BC5936 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAA3E4EA1C5F93CF00BC5936 /* CoffeeStatusUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA3E4F91C5F93CF00BC5936 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAA3E5091C5F93CF00BC5936 /* NotificationController.swift in Sources */,
+				FAA3E50B1C5F93CF00BC5936 /* ComplicationController.swift in Sources */,
+				FAA3E5071C5F93CF00BC5936 /* ExtensionDelegate.swift in Sources */,
+				FAA3E5051C5F93CF00BC5936 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAA3E4DC1C5F93CF00BC5936 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAA3E4C51C5F93CF00BC5936 /* CoffeeStatus */;
+			targetProxy = FAA3E4DB1C5F93CF00BC5936 /* PBXContainerItemProxy */;
+		};
+		FAA3E4E71C5F93CF00BC5936 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAA3E4C51C5F93CF00BC5936 /* CoffeeStatus */;
+			targetProxy = FAA3E4E61C5F93CF00BC5936 /* PBXContainerItemProxy */;
+		};
+		FAA3E4F11C5F93CF00BC5936 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAA3E4ED1C5F93CF00BC5936 /* CoffeeStatus WatchKit App */;
+			targetProxy = FAA3E4F01C5F93CF00BC5936 /* PBXContainerItemProxy */;
+		};
+		FAA3E5001C5F93CF00BC5936 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAA3E4FC1C5F93CF00BC5936 /* CoffeeStatus WatchKit Extension */;
+			targetProxy = FAA3E4FF1C5F93CF00BC5936 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FAA3E4CD1C5F93CF00BC5936 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAA3E4CE1C5F93CF00BC5936 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FAA3E4D21C5F93CF00BC5936 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAA3E4D31C5F93CF00BC5936 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FAA3E4F31C5F93CF00BC5936 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAA3E4F41C5F93CF00BC5936 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAA3E50F1C5F93CF00BC5936 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAA3E5101C5F93CF00BC5936 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAA3E5121C5F93CF00BC5936 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "CoffeeStatus WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.alexpringle.CoffeeStatus.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		FAA3E5131C5F93CF00BC5936 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "CoffeeStatus WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.alexpringle.CoffeeStatus.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		FAA3E5161C5F93CF00BC5936 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = CoffeeStatus_WatchKit_Extension;
+				INFOPLIST_FILE = "CoffeeStatus WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.alexpringle.CoffeeStatus.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		FAA3E5171C5F93CF00BC5936 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = CoffeeStatus_WatchKit_Extension;
+				INFOPLIST_FILE = "CoffeeStatus WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.alexpringle.CoffeeStatus.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		FAA3E51A1C5F93CF00BC5936 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CoffeeStatus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.alexpringle.CoffeeStatus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FAA3E51B1C5F93CF00BC5936 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CoffeeStatus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.alexpringle.CoffeeStatus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FAA3E51D1C5F93CF00BC5936 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CoffeeStatusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.alexpringle.CoffeeStatusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoffeeStatus.app/CoffeeStatus";
+			};
+			name = Debug;
+		};
+		FAA3E51E1C5F93CF00BC5936 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CoffeeStatusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.alexpringle.CoffeeStatusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoffeeStatus.app/CoffeeStatus";
+			};
+			name = Release;
+		};
+		FAA3E5201C5F93CF00BC5936 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CoffeeStatusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.alexpringle.CoffeeStatusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CoffeeStatus;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		FAA3E5211C5F93CF00BC5936 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CoffeeStatusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.alexpringle.CoffeeStatusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CoffeeStatus;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAA3E4C11C5F93CF00BC5936 /* Build configuration list for PBXProject "CoffeeStatus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAA3E50F1C5F93CF00BC5936 /* Debug */,
+				FAA3E5101C5F93CF00BC5936 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAA3E5111C5F93CF00BC5936 /* Build configuration list for PBXNativeTarget "CoffeeStatus WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAA3E5121C5F93CF00BC5936 /* Debug */,
+				FAA3E5131C5F93CF00BC5936 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FAA3E5151C5F93CF00BC5936 /* Build configuration list for PBXNativeTarget "CoffeeStatus WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAA3E5161C5F93CF00BC5936 /* Debug */,
+				FAA3E5171C5F93CF00BC5936 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FAA3E5191C5F93CF00BC5936 /* Build configuration list for PBXNativeTarget "CoffeeStatus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAA3E51A1C5F93CF00BC5936 /* Debug */,
+				FAA3E51B1C5F93CF00BC5936 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FAA3E51C1C5F93CF00BC5936 /* Build configuration list for PBXNativeTarget "CoffeeStatusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAA3E51D1C5F93CF00BC5936 /* Debug */,
+				FAA3E51E1C5F93CF00BC5936 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FAA3E51F1C5F93CF00BC5936 /* Build configuration list for PBXNativeTarget "CoffeeStatusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAA3E5201C5F93CF00BC5936 /* Debug */,
+				FAA3E5211C5F93CF00BC5936 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAA3E4BE1C5F93CF00BC5936 /* Project object */;
+}
