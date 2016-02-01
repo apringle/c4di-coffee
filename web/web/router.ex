@@ -20,8 +20,10 @@ defmodule C4diCoffeeWeb.Router do
     get "/data", PageController, :data
   end
 
-  # Other scopes may use custom stacks.
-  # scope "/api", C4diCoffeeWeb do
-  #   pipe_through :api
-  # end
+   #Other scopes may use custom stacks.
+   scope "/api", C4diCoffeeWeb do
+     pipe_through :api
+     get "/", SummaryController, :index
+     get "/pot_name", SummaryController, :show
+   end
 end
