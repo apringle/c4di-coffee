@@ -24,6 +24,6 @@ defmodule C4diCoffeeWeb.Router do
    scope "/api", C4diCoffeeWeb do
      pipe_through :api
      get "/", SummaryController, :index
-     get "/pot_name", SummaryController, :show
+     get "/:pot_name", SummaryController, :show
    end
 end
