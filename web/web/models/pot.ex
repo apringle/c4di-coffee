@@ -4,9 +4,9 @@ defmodule C4diCoffeeWeb.Pot do
   @primary_key {:pot_name, :string, []}
   @derive {Phoenix.Param, key: :pot_name}
   schema "pots" do
-    field :empty, :float
-    field :full, :float
-    field :avg_cup, :float
+    field :empty, :float #Empty weight KG
+    field :full, :float #Full weight KG
+    field :avg_cup, :float #avg_cup weight KG
 
     timestamps
   end
