@@ -32,14 +32,18 @@ defmodule C4diCoffeeWeb.SummaryController do
     #Grab all the readings for the given pot TODO Make this time dependant. get last 10 readings?
     query = from(r in Reading) 
     |> where([r], r.pot_name == ^pot.pot_name)
+    |> order_by([r], desc: r.time)
     |> limit(5) #TODO Choose a good limit? depends on reading rate
-    |> order_by([r], r.time)
     Repo.all(query)
   end
 
   #Parses a set of readings into a summary
   #TODO Assumes readings and pot_detail have things in them
   def parsereading(readings, pot_detail) do
+
+    #Debug print readings
+    Enum.map(readings, fn r -> IO.puts "Date: #{r.time}" end)
+
     #Extract all the readings from the collection of readings
     reading_kgs = Enum.map(readings, fn r -> r.reading_kg end )
     
@@ -54,7 +58,7 @@ defmodule C4diCoffeeWeb.SummaryController do
     IO.puts "pot_detail.full = #{pot_detail.full}"
     
     #get the last reading time TODO relies on readings being ordeed by time..
-    time = List.last(Enum.to_list(readings)).time
+    time = List.first(Enum.to_list(readings)).time
 
     #Work out what % is the average cup
     avg_cup_percentage = pot_detail.avg_cup /(pot_detail.full - pot_detail.empty) * 100  
