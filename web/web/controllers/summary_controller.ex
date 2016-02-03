@@ -1,11 +1,10 @@
 defmodule C4diCoffeeWeb.SummaryController do
   use C4diCoffeeWeb.Web, :controller
-
+  use Timex
   alias C4diCoffeeWeb.Summary
   alias C4diCoffeeWeb.Pot
   alias C4diCoffeeWeb.Reading
-  alias Timex.Date
-  alias Timex.DateFormat  
+  alias Ecto.DateTime
   import Ecto.Query
 
   #Returns summaires for each pot in the system.
@@ -31,11 +30,15 @@ defmodule C4diCoffeeWeb.SummaryController do
 
   def getreadings(pot) do
     #Grab all the readings for the given pot TODO Make this time dependant. get last 10 readings?
-    query = from(r in Reading) |> where([r], r.pot_name == ^pot.pot_name)
+    query = from(r in Reading) 
+    |> where([r], r.pot_name == ^pot.pot_name)
+    |> limit(5) #TODO Choose a good limit? depends on reading rate
+    |> order_by([r], r.time)
     Repo.all(query)
   end
 
   #Parses a set of readings into a summary
+  #TODO Assumes readings and pot_detail have things in them
   def parsereading(readings, pot_detail) do
     #Extract all the readings from the collection of readings
     reading_kgs = Enum.map(readings, fn r -> r.reading_kg end )
@@ -48,11 +51,10 @@ defmodule C4diCoffeeWeb.SummaryController do
     
     #output for debugging
     IO.puts "fill_level_average = #{fill_level_average}"
-    IO.puts "pot_detial.full = #{pot_detail.full}"
+    IO.puts "pot_detail.full = #{pot_detail.full}"
     
-    #Get the time the reading was calcualted? TODO Make this the last reading time.
-    #time = Date.local |> DateFormat.format("{ISO}") |> elem(1)
-    time = Enum.map(readings, fn r -> r.time end)|> Enum.max
+    #get the last reading time TODO relies on readings being ordeed by time..
+    time = List.last(Enum.to_list(readings)).time
 
     #Work out what % is the average cup
     avg_cup_percentage = pot_detail.avg_cup /(pot_detail.full - pot_detail.empty) * 100  
