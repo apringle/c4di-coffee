@@ -1,5 +1,3 @@
-FROM apringle/phoenix-docker
+FROM debugphoenix
 
-RUN  sudo apt-get -yqq install postgresql-client
 
-WORKDIR /src

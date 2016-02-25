@@ -1,13 +1,9 @@
 web:
   build: ./web
-  command: sh start.sh
   ports:
     - '4000:4000'
   links:
     - postgres
-  volumes:
-    - './web:/code'
-  working_dir: '/code'
 postgres:
   image: postgres
   environment:

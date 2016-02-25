@@ -39,4 +39,5 @@ config :c4di_coffee_web, C4diCoffeeWeb.Repo,
   password: "ilovecoffee",
   database: "c4di_coffee_web_dev",
   hostname: "postgres",
+  port: 5432,
   pool_size: 10
