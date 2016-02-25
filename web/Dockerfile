@@ -1,2 +1,2 @@
-FROM debugphoenix
+FROM apringle/phoenix-docker
 
