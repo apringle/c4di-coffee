@@ -1,9 +1,19 @@
-web:
+phoenix:
   build: ./web
+web:
+  extends:
+    service: phoenix
   ports:
     - '4000:4000'
   links:
     - postgres
+  command: mix phoenix.server
+ecto-setup:
+  extends: 
+    service: phoenix 
+  links:
+   - postgres
+  command: mix ecto.create && mix ecto.migrate
 postgres:
   image: postgres
   environment:
