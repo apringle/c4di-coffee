@@ -51,7 +51,7 @@ defmodule C4diCoffeeWeb.SummaryController do
     fill_level_average = Enum.sum(reading_kgs) / Enum.count(reading_kgs)
     
     #Work out the percentage fullness
-    pot_fill_level = (fill_level_average - pot_detail.empty) / (pot_detail.full - pot_detail_empty) * 100
+    pot_fill_level = (fill_level_average - pot_detail.empty) / (pot_detail.full - pot_detail.empty) * 100
     
     #output for debugging
     IO.puts "fill_level_average = #{fill_level_average}"
